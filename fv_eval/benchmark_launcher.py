@@ -254,12 +254,11 @@ class BenchmarkLauncher(object):
                     )
                     time.sleep(10)
                     return [textblock.text for textblock in completion.content]
-                elif api_provider == "google":      
-                        history=[
-                            {"role": "user", "parts": system_prompt},
-                            {"role": "model", "parts": "Understood."},
-                        ]
-                    )
+                elif api_provider == "google":
+                    history=[
+                        {"role": "user", "parts": system_prompt},
+                        {"role": "model", "parts": "Understood."},
+                    ]
                     
                     completion = chat.send_message(
                         user_prompt,
