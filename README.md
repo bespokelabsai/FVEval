@@ -58,7 +58,7 @@ python run_design2sva.py --models "mixtral-8x22b"
 # You can also see the flag options available for each run script by passing the '-h' flag
 
 # Running LM inference on the NL2SVA-machine (assertion generation from directed NL instructions) task:
-python run_nl2sva.py --mode machine --models "gpt-4;gpt-3.5-turbo" --num_icl 3
+python run_nl2sva.py --mode machine --models "gpt-4" --num_icl 1
 
 # Running LM inference on the NL2SVA-Human (assertion generation from testbench and high-level instructions) task:
 python run_nl2sva.py --mode human --models "gpt-4;gpt-3.5-turbo" --num_icl 3
